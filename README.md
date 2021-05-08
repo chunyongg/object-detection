@@ -7,11 +7,6 @@
 
 # Usage
 
-## Required dependencies
-
-
-
-
 1. Clone the repository
 1. Run `pip install -r requirements.txt` to install all dependencies
 1. Run `export FLASK_APP=app.py`
