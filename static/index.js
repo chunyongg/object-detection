@@ -4,9 +4,9 @@ window.onload = () => {
 		input = $('#imageinput')[0]
 		if(input.files && input.files[0])
 		{
+			var startTime = performance.now();
 			let formData = new FormData();
 			formData.append('image' , input.files[0]);
-			const startTime = performance.now();
 			$.ajax({
 				url: "http://localhost:5000/detectObject", // fix this to your liking
 				type:"POST",
@@ -20,7 +20,11 @@ window.onload = () => {
 				},
 				success: function(data){
 					const endTime = performance.now();
-					const time_taken = (data['time'] + endTime - startTime).toFixed(2);
+					const timeElapsed = (endTime - startTime) / 1000;
+					console.log(timeElapsed);
+					const functionTime = parseFloat(data.time);
+					const time_taken = (functionTime + timeElapsed).toFixed(2);
+					console.log(time_taken);
 					bytestring = data['status']
 					image = bytestring.split('\'')[1]
 					document.getElementById('timetaken').innerHTML = `Time taken: ${time_taken}s`; 
