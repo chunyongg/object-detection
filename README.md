@@ -4,6 +4,7 @@
 
 [Supported classes](model/coco.names)
 
+Demo: [http://3.22.27.213:8080/](http://3.22.27.213:8080/)
 
 # Usage
 
