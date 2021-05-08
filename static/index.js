@@ -20,7 +20,7 @@ window.onload = () => {
 				},
 				success: function(data){
 					const endTime = performance.now();
-					time_taken = (data['time'] + endTime - startTime).toFixed(2);
+					const time_taken = (data['time'] + endTime - startTime).toFixed(2);
 					bytestring = data['status']
 					image = bytestring.split('\'')[1]
 					document.getElementById('timetaken').innerHTML = `Time taken: ${time_taken}s`; 
