@@ -1,4 +1,4 @@
-# A simple object detection web app built with Flask and YOLOv3
+### A simple object detection web app built with Flask and YOLOv3
 
 ![User interface](display.png)
 
@@ -6,11 +6,6 @@
 
 
 # Usage
-
-## Required dependencies
-
-
-
 
 1. Clone the repository
 1. Run `pip install -r requirements.txt` to install all dependencies
