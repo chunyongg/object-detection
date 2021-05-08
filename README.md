@@ -1,4 +1,4 @@
-# A simple object detection web app built with Flask and YOLOv3
+### A simple object detection web app built with Flask and YOLOv3
 
 ![User interface](display.png)
 
