@@ -9,6 +9,7 @@
 
 1. Clone the repository
 1. Run `pip install -r requirements.txt` to install all dependencies
+1. Download and place the weights from [here](https://pjreddie.com/media/files/yolov3.weights) into `model` folder
 1. Run `export FLASK_APP=app.py`
 1. Run `flask run` and access the web client via localhost
 
