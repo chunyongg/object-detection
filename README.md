@@ -4,6 +4,8 @@
 
 [Supported classes](model/coco.names)
 
+[Demo](http://3.22.100.41/)
+
 # Dependencies
 
 1. Flask
